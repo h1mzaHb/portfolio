@@ -272,7 +272,7 @@ footer .column > a:hover {
 }
 #video {
   position: absolute;
-  top: 205%;
+  top: 250%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
