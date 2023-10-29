@@ -271,10 +271,10 @@ footer .column > a:hover {
   text-align: center;
 }
 #video {
-  position: absolute;
-  top: 250%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  
+  display: flex;
+  justify-content: center;
+align-items: flex-end;
 }
 @media (width < 900px) {
   .nav-links {
@@ -306,4 +306,33 @@ footer .column > a:hover {
   footer {
     grid-template-columns: 1fr 150px;
   }
+}
+
+input , textarea {
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 6px;
+  
+
+  
+}
+#contact-submit{
+  background-color:white;
+  padding:10px;
+  border-radius: 10px;
+  display: flex;
+  justify-content:center;
+  
+}
+
+#contact-submit:hover{
+  background-color: silver;
+}
+
+form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+ 
 }
