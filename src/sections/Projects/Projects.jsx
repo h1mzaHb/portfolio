@@ -14,13 +14,13 @@ function Projects() {
           src={weatheryy}
           link="https://github.com/h1mzaHb/weather-app-js"
           h3="Weatheryy"
-          p="weather forecast"
+          p="weather forecast app"
         />
         <ProjectCard
           src={l0ck3r}
           link="https://github.com/h1mzaHb/Password-generator"
           h3="l0ck3r"
-          p="Password generator"
+          p="Password generator script"
         />
         <ProjectCard
           src={portfolio}
