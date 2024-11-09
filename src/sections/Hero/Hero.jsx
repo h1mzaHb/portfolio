@@ -7,6 +7,8 @@ import githubDark from '../../assets/github-dark.svg';
 import linkedinLight from '../../assets/linkedin-light.svg';
 import linkedinDark from '../../assets/linkedin-dark.svg';
 import { useTheme } from '../../common/ThemeContext';
+import { motion } from 'framer-motion';
+import { fadeIn } from '../Hero/variants'
 
 function Hero() {
   const { theme, toggleTheme } = useTheme();
@@ -17,7 +19,12 @@ function Hero() {
 
   return (
     <section id="hero" className={styles.container}>
-      <div className={styles.colorModeContainer}>
+      <motion.div
+      variants={fadeIn("up", 0.2)}
+      initial="hidden"
+      whileInView={"show"}
+      viewport={{ once: true, amount: 0.7 }}
+       className={styles.colorModeContainer}>
         <img
           src={heroImg}
           className={styles.hero}
@@ -29,8 +36,12 @@ function Hero() {
           alt="Color mode icon"
           onClick={toggleTheme}
         />
-      </div>
-      <div className={styles.info}>
+      </motion.div>
+      <motion.div 
+      variants={fadeIn("up", 0.2)}
+      initial="hidden"
+      whileInView={"show"}
+      viewport={{ once: true, amount: 0.7 }}className={styles.info}>
         <h1>
           Hamza
           <br />
@@ -51,7 +62,7 @@ function Hero() {
         <a>
           <button className="hover">Resume</button>
         </a>
-      </div>
+      </motion.div>
     </section>
   );
 }
